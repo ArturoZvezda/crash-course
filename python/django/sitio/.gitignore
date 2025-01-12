@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff:
+db.sqlite3
+*.log
+media/
+staticfiles/
+
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+*.venv
+ENV/
+env.bak/
+*.env
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Node.js (if using npm for frontend)
+node_modules/
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+.coverage.*
+.cache
+
+# Test output
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+*.log
+*.pot
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Local cache files
+*.swp
+*.swo
+*~

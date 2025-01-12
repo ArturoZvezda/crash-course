@@ -1,0 +1,19 @@
+{% extends 'accounts/base.html' %}
+
+{% block title %}Profile List{% endblock %}
+
+{% block content %}
+<h1 class="my-4">Profiles</h1>
+<ul class="list-group">
+    {% for profile in profiles %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            {{ profile.name }} - {{ profile.email }}
+            <div>
+                <a href="{% url 'profile_edit' profile.id %}" class="btn btn-primary btn-sm">Edit</a>
+                <a href="{% url 'profile_delete' profile.id %}" class="btn btn-danger btn-sm">Delete</a>
+            </div>
+        </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'profile_create' %}" class="btn btn-success mt-4">Add New Profile</a>
+{% endblock %}

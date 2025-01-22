@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestor de Tareas</title>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <ul>
+        {% for tarea in tareas %}
+            <li>
+                {{ tarea.titulo }} - {% if tarea.completada %} Completada {% else %} Pendiente {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

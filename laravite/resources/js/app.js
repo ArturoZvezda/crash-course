@@ -1,6 +1,8 @@
 import './bootstrap';
 import '../css/app.css';
-
+import { createApp } from 'vue';
+// Importa un componente Vue básico (lo crearemos en el siguiente paso)
+import HelloWorld from './components/HelloWorld.vue';
 
 // Añade algo dinámico al DOM
 const app = document.querySelector('#app');
@@ -15,3 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     button.onclick = () => alert('¡Hola desde JavaScript!');
     app?.appendChild(button);
 });
+
+// Crea la instancia de Vue y registra el componente
+const vapp = createApp({});
+vapp.component('hello-world', HelloWorld);
+
+// Monta Vue en un contenedor con el ID `#app`
+vapp.mount('#vapp');

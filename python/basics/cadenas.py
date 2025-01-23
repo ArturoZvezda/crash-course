@@ -19,3 +19,7 @@ apellido = "González"
 nombre_completo = nombre + " " + apellido
 
 print("Nombre completo en diferentes formas :", nombre_completo,nombre_completo.capitalize(),nombre_completo.title(),nombre_completo.swapcase(),nombre_completo.casefold())
+
+print('''este texto
+      se debe imprimir
+      en multiples lineas''')

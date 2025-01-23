@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ config('app.name') }}</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @livewireStyles
+
     </head>
     <body>
         <div id="app">
@@ -17,6 +19,14 @@
             Botón con Tailwind
         </button>
 
+
+            <h1>¡Laravel y Livewire funcionando juntos!</h1>
+        <p class="mt-4 text-gray-600">Este contador es un componente de livewire.</p>
+
+
+        <livewire:counter />
+
+        @livewireScripts
 
     </body>
 </html>

@@ -3,6 +3,8 @@ import '../css/app.css';
 import { createApp } from 'vue';
 // Importa un componente Vue básico (lo crearemos en el siguiente paso)
 import HelloWorld from './components/HelloWorld.vue';
+import './components/ReactApp'; // Importamos React
+
 
 // Añade algo dinámico al DOM
 const app = document.querySelector('#app');

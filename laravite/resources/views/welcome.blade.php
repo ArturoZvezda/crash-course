@@ -35,6 +35,10 @@
             <hello-world></hello-world>
         </div>
 
+        <div id="react-app" class="max-w-2xl mx-auto bg-yellow-50 p-4 mt-4">
+            <!-- Aquí se montará React -->
+        </div>
+
         @livewireScripts
 
     </body>
